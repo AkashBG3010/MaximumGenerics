@@ -26,7 +26,7 @@ public class Operation {
 			System.out.println("Enter third float Number:");
 			number1 = sc.nextFloat();
 		}
-			public static void getInputForString() {
+		public static void getInputForString() {
 				System.out.println("Enter first string:");
 				string1 = sc.next();
 				System.out.println("Enter second string:");
@@ -34,35 +34,14 @@ public class Operation {
 				System.out.println("Enter third string:");
 				string3 = sc.next();
 		}
-		public static Integer testMaximumInteger(Integer x,Integer y,Integer z) {
-			max1 = x;
-			if(y.compareTo(max1) > 0){
-				max1 = y;
+		public static <E extends Comparable<E>> E testMaximum(E a,E b,E c) {
+			E max = a;
+			if(b.compareTo(max) > 0){
+				max = b;
 			}
-			if(z.compareTo(max1) > 0){
-				max1 = z;
+			if(c.compareTo(max) > 0){
+				max = c;
 			}
-			return max1;
+			return max;
 		}
-		public static Float testMaximumFloat(Float a,Float b,Float c) {
-			max2 = a;
-			if(b.compareTo(max2) > 0){
-				max2 = b;
-			}
-			if(c.compareTo(max2) > 0){
-				max2 = c;
-			}
-			return max2;
-		}
-		public static String testMaximumString(String k,String l,String m) {
-			max3 = k;
-			if(l.compareTo(max3) > 0){
-				max3 = l;
-			}
-			if(m.compareTo(max3) > 0){
-				max3 = m;
-			}
-			return max3;
-		}
-		
-	}
+}
