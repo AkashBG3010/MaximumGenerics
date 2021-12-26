@@ -12,7 +12,9 @@ public static void main(String[] args) {
 		operation.getInputForFloat();
 		operation.testMaximumFloat(operation.number1,operation.number2,operation.number3);
 		System.out.println(operation.max2+" is maximum amongst float numbers");
-		
+		operation.getInputForString();
+		operation.testMaximumString(operation.string1,operation.string2,operation.string3);
+		System.out.println(operation.max3+" is maximum amongst strings");
 	}
 
 }
